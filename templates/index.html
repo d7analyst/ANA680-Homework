@@ -6,15 +6,20 @@
 </head>
 <body>
    <h1>Breast Cancer Prediction</h1><br><br>
-   <form>
+
+   <form action="{{ url_for('predict')}}" method="POST">
   	<label for="CT">Clump_Thickness:</label><br>
   	<input type="number" id="CT" name="Clump_Thickness" value="3"><br>
   	<label for="UCS">Uniformity_of_Cell_Size:</label><br>
   	<input type="number" id="UCS" name="Uniformity_of_Cell_Size" value="3"><br>
   	<label for="MA">Marginal_Adhesion:</label><br>
   	<input type="number" id="MA" name="Marginal_Adhesion" value="3"><br><br>
-  	<input type="submit" value="Submit">
-    	My prediction: {{ predict }
+  	<input type="submit" value="Submit"><br> <br>
+    	
    </form>
+
+	Tumor Cancerous prediction:<br>
+	 {{ predict }<br>
+	0 = Negative  1 = Positive
 </body>
 </html>
