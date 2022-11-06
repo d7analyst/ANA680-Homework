@@ -8,7 +8,7 @@
 <h2>Breast Cancer Prediction</h2>
     <form action="{{ url_for('predict')}}" method="POST">
         <label for="CT">Clump_Thickness: </label><br>
-        <input type="number" id = "CT"value="<?php if(isset($_POST['Clump_Thickness'])) echo strip_tags($_POST['Clump_Thickness']);  ?>"/> name="Clump_Thickness"><br><br>
+        <input type="number" id = "CT" name="Clump_Thickness"><br><br>
         <label for="UCS">Uniformity_of_Cell_Size:</label><br>
         <input type="number" id = "UCS" name="Uniformity_of_Cell_Size"><br><br>
         <label for="MA"> Marginal_Adhesion:</label><br>
