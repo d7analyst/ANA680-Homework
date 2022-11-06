@@ -6,9 +6,12 @@
 </head>
 <body>
     <form action="{{ url_for('predict')}}" method="POST">
-        Clump_Thickness:  <input type="number" name="Clump_Thickness"><br>
-        Uniformity_of_Cell_Size:   <input type="number" name="Uniformity_of_Cell_Size"><br>
-        Marginal_Adhesion:  <input type="number" name="Marginal_Adhesion"><br>
+        <label for="CT">Clump_Thickness: </label>
+        <input type="number" id = "CT" name="Clump_Thickness"><br><br>
+        <label for="UCS">Uniformity_of_Cell_Size:</label>
+        <input type="number" id = "UCS" name="Uniformity_of_Cell_Size"><br><br>
+        <label for="MA"> Marginal_Adhesion:</label>
+        <input type="number" id="MA" name="Marginal_Adhesion"><br><br>
       
         <input type=submit    value=Submit>
    </form>
