@@ -5,15 +5,16 @@
     <title><h1>Breast Cancer Prediction</h1></title>
 </head>
 <body>
+<h2>Breast Cancer Prediction</h2>
     <form action="{{ url_for('predict')}}" method="POST">
-        <label for="CT">Clump_Thickness: </label>
+        <label for="CT">Clump_Thickness: </label><br>
         <input type="number" id = "CT" name="Clump_Thickness"><br><br>
-        <label for="UCS">Uniformity_of_Cell_Size:</label>
+        <label for="UCS">Uniformity_of_Cell_Size:</label><br>
         <input type="number" id = "UCS" name="Uniformity_of_Cell_Size"><br><br>
-        <label for="MA"> Marginal_Adhesion:</label>
+        <label for="MA"> Marginal_Adhesion:</label><br>
         <input type="number" id="MA" name="Marginal_Adhesion"><br><br>
       
-        <input type=submit    value=Submit>
+        <input type=submit    value=Submit><br><br>
    </form>
     My prediction: {{ predict }}
 </body>
